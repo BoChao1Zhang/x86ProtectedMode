@@ -12,4 +12,11 @@
         "stdint.h": "c",
         "stdint-gcc.h": "c"
     },
+    "makefile.launchConfigurations": [
+        {
+            "cwd": "e:\\lishutong\\diy-x86os-master\\diy-200lines-os\\x86ProtectedMode",
+            "binaryPath": "e:\\lishutong\\diy-x86os-master\\diy-200lines-os\\x86ProtectedMode\\os.elf",
+            "binaryArgs": []
+        }
+    ],
 }

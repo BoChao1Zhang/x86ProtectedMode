@@ -8,3 +8,16 @@
  *课程请见：https://study.163.com/course/introduction.htm?courseId=1212765805&_trace_c_p_k2_=0bdf1e7edda543a8b9a0ad73b5100990
  */
 #include "os.h"
+
+typedef unsigned char uint8_t;
+typedef unsigned short uint16_t;
+typedef unsigned int uint32_t;
+
+
+//全局描述符表
+struct{uint16_t limit_l,base_l,base_m_attr, base_limit;}gdt_table[256] __attribute__((aligned(8))) = {
+    //内核代码段基地址从0开始，大小为4GB，段粒度为4KB，段类型为代码段，特权级为0，不允许访问，不允许写入，不允许扩展方向，不允许执行
+    [KERNEL_CODE_SEG / 8] = {0xffff, 0x0000,0x9a00,0xcf00},
+    [KERNEL_DATA_SEG / 8] = {0xffff, 0x0000,0x9200,0xcf00},
+};
+
