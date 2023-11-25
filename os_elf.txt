@@ -10,7 +10,7 @@ ELF Header:
   Version:                           0x1
   Entry point address:               0x7c00
   Start of program headers:          52 (bytes into file)
-  Start of section headers:          7504 (bytes into file)
+  Start of section headers:          7524 (bytes into file)
   Flags:                             0x0
   Size of this header:               52 (bytes)
   Size of program headers:           32 (bytes)
@@ -26,13 +26,13 @@ Section Headers:
   [ 2] .data             PROGBITS        00008000 001000 000800 00  WA  0   0  8
   [ 3] .comment          PROGBITS        00000000 001800 000011 01  MS  0   0  1
   [ 4] .debug_aranges    PROGBITS        00000000 001818 000038 00      0   0  8
-  [ 5] .debug_info       PROGBITS        00000000 001850 00010d 00      0   0  1
-  [ 6] .debug_abbrev     PROGBITS        00000000 00195d 00007e 00      0   0  1
-  [ 7] .debug_line       PROGBITS        00000000 0019db 000084 00      0   0  1
-  [ 8] .debug_str        PROGBITS        00000000 001a5f 0000fa 01  MS  0   0  1
-  [ 9] .symtab           SYMTAB          00000000 001b5c 000130 10     10  14  4
-  [10] .strtab           STRTAB          00000000 001c8c 000051 00      0   0  1
-  [11] .shstrtab         STRTAB          00000000 001cdd 000070 00      0   0  1
+  [ 5] .debug_info       PROGBITS        00000000 001850 000118 00      0   0  1
+  [ 6] .debug_abbrev     PROGBITS        00000000 001968 00007e 00      0   0  1
+  [ 7] .debug_line       PROGBITS        00000000 0019e6 000084 00      0   0  1
+  [ 8] .debug_str        PROGBITS        00000000 001a6a 000105 01  MS  0   0  1
+  [ 9] .symtab           SYMTAB          00000000 001b70 000130 10     10  14  4
+  [10] .strtab           STRTAB          00000000 001ca0 000051 00      0   0  1
+  [11] .shstrtab         STRTAB          00000000 001cf1 000070 00      0   0  1
 Key to Flags:
   W (write), A (alloc), X (execute), M (merge), S (strings), I (info),
   L (link order), O (extra OS processing required), G (group), T (TLS),
